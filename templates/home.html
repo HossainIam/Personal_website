@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Home - Farhad Hossain {% endblock %}
+
+{% block content %}
+
+<main class="container main-layout">
+
+    <section id="hero" class="hero-wrapper">
+
+        <!-- Left: Image -->
+        <div class="hero-photo"> <!--Affect the frame or container-->
+            <img src="/static/images/me.jpg" alt="Farhad Hossain" class="profile-photo"> <!--Affect the image-->
+        </div>
+
+        <!-- Right: Text -->
+        <div class="hero-text card">
+            <h2>Hello, welcome to my portfolio</h2>
+            <p>
+                I combine finance expertise with AI and data analytics
+                to create smarter, data-driven solutions.
+            </p>
+
+            <div class="card-actions">
+                <a href="/static/CV_Farhad_Hossain.pdf" class="btn-primary">
+                    Download CV
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}
