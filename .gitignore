@@ -1,0 +1,8 @@
+# Ignore python cache, environment file, notebook chchkpoint files
+__pycache__/
+.env
+*.ipynb_checkpoints
+
+# Ignore pyCharm specific settings
+.idea/
+
