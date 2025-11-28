@@ -3,16 +3,17 @@
 
 {% block content %}
 
-<main class="container main-layout">
+<main class="container">
 
+    <!-- HERO SECTION -->
     <section id="hero" class="hero-wrapper">
-        <!-- Left: Image -->
-        <div class="hero-photo"> <!--Affect the frame or container-->
-            <img src="/static/images/me.jpg" alt="Farhad Hossain" class="profile-photo"> <!--Affect the image-->
+        <div class="hero-photo fade-in">
+            <img src="/static/images/me.png" alt="Farhad Hossain" class="profile-photo">
         </div>
 
-        <!-- Right: Text -->
-        <div class="hero-text card">
+        <div class="hero-text fade-in">
+
+
             <h2>Hello, welcome to my portfolio</h2>
             <p>
                 I combine finance expertise with AI and data analytics
@@ -20,11 +21,83 @@
             </p>
 
             <div class="card-actions">
-                <a href="/static/CV_Farhad_Hossain.pdf" class="btn-primary">
-                    Download CV
-                </a>
+                <!-- <a href="/static/CV_Farhad_Hossain.pdf" class="btn-primary">Download CV</a> -->
             </div>
         </div>
+        <!--<div class="scroll-indicator">↓</div>-->
     </section>
 </main>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-card ">
+        <div class=" container" >
+            <div class="about-content fade-in">
+               <div class="about-text">
+                <h1>About Me</h1>
+                <p>
+                    I’m Farhad Hossain, a graduate student at Hochschule Neu-Ulm,
+                    pursuing an MSc in Artificial Intelligence and Data Analytics.
+                </p>
+                <p>
+                    I focus on exploring how AI can enhance financial strategies, from ML forecasting
+                    to algorithmic insights for markets.
+                </p>
+               </div>
+            <img src="/static/images/bearbull.png" class="about-photo" alt="Financial Market">
+
+        </div>
+        </div>
+
+                   <!-- <div class="scroll-indicator">↓</div>-->
+    </section>
+
+
+     <!--Education-->
+
+    <section id="education">
+    <div class="container">
+
+        <div class="education-wrapper fade-in">
+
+            <div class="hnu-content">
+                <div class="hnu-description">
+                    <h1>University of Applied Sciences Neu-Ulm, Germany</h1>
+                    <p> MSc in Artificial Intelligence and Data Analytics
+                        Currently studying and focused on developing practical skills in machine learning, data analytics,
+                        and AI-driven decision-making, with a strong emphasis on applying technology to real-world business challenges.</p>
+                </div>
+                <img src="/static/images/HNU.png" class="hnu-photo">
+            </div>
+
+            <div class="nsu-content">
+                <div class="nsu-description">
+                    <h1>BBA in Finance — North South University</h1>
+                    <p>Developed a strong foundation in financial analysis, investment strategy, and data-driven decision-making, supported by hands-on experience in financial modeling and real-world business applications.</p>
+                </div>
+                <img src="/static/images/nsu.png" class="nsu-photo">
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+    <!-- CERTIFICATES SECTION -->
+   <!-- <section id="certificates" class="certificate-wrapper container">
+        <div class="certificate-content">
+            <h1>Awards & Certifications</h1>
+            <div class="certificate-grid">
+                <img src="/static/certificates/database.jpg" class="cert-img" alt="Certificate 1">
+                <img src="/static/certificates/fin_satat.jpg" class="cert-img" alt="Certificate 2">
+                <img src="/static/certificates/Normalstat.jpg" class="cert-img" alt="Certificate 3">
+                <img src="/static/certificates/powerbi.jpg" class="cert-img" alt="Certificate 4">
+                <img src="/static/certificates/python.jpg" class="cert-img" alt="Certificate 5">
+                <img src="/static/certificates/EDA.jpg" class="cert-img" alt="Certificate 6">
+            </div>
+        </div>
+    </section>-->
+
+
 {% endblock %}

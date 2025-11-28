@@ -17,11 +17,11 @@
             </div>
             <nav class="nav-links">             <!-- Top right Navigation bar-->
                 <a href="/">Home</a>            <!-- Connection to home botton-->
-                <a href="about">About</a>
-                <a href="education">Education</a>
-                <a href="certificates">Certificates</a>
-                <a href="projects">Projects</a>
-                <a href="contact">Contact</a>
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+               <!-- <a href="#certificates">Certificates</a>-->
+                <!--<a href="projects">Projects</a>
+                <a href="contact">Contact</a>-->
             </nav>
         </div>
     </header>
@@ -31,6 +31,8 @@
         <!-- Page-specific content will go here -->
         {% endblock %}
     </div>
+     <script src="{{ url_for('static', filename='script.js') }}"></script> <!--This tells Flask to load your JavaScript file from the static folder.-->
+
 </body>
 </html>
 
