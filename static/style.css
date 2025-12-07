@@ -16,7 +16,7 @@ Gives YOU full control--- */
 :root {
     --dark-bg: #0A0F1F;      /* Deep finance background */
     --dark-section: #0D1428; /* Slightly lighter dark section */
-    --text-main: #E8EDF2;    /* Clean light text */
+    --text-main: #E8EDF2;    /* Clean light text   #333333*/
     --text-sub: #9BA6B2;     /* Soft secondary text */
     --accent-teal: #0FBBC6;  /* Teal accent */
     --accent-gold: #D4AF37;  /* Gold premium accent */
