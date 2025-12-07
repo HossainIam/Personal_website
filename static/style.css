@@ -325,4 +325,58 @@ body {
 }
 /* End of this certificate section */
 
+/* --- MOBILE RESPONSIVE DESIGN --- */
+@media (max-width: 768px) {
+
+    /* HERO SECTION (First page) */
+    .hero-wrapper {
+        flex-direction: column;    /* stack image and text */
+        text-align: center;        /* center text */
+        padding: 2rem 0;
+    }
+
+    .hero-text {
+        padding-right: 0;          /* remove desktop spacing */
+        margin-top: 1rem;
+    }
+
+    .profile-photo {
+        max-width: 80%;            /* prevent huge image */
+        width: 260px;
+        height: auto;
+    }
+
+    /* ABOUT SECTION */
+    .about-content {
+        flex-direction: column;    /* stack text above image */
+        text-align: center;
+    }
+
+    .about-text p {
+        margin-left: 0;            /* center the paragraph */
+        max-width: 100%;
+    }
+
+    .about-photo {
+        margin-right: 0;
+        width: 260px;
+    }
+
+    /* EDUCATION SECTION */
+    .hnu-content,
+    .nsu-content {
+        flex-direction: column;    /* stack */
+        text-align: center;
+    }
+
+    .hnu-description,
+    .nsu-description {
+        padding: 0 1rem;
+    }
+
+    /* CERTIFICATES */
+    .certificate-grid {
+        grid-template-columns: 1fr;   /* 1 column on small screens */
+    }
+}
 
