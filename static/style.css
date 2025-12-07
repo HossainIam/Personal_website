@@ -218,7 +218,7 @@ body {
     margin-left: 2rem;
 }
 /*Image on right*/
-.about-photo {
+.market-photo {
     width: 320px;          /* same visual importance as hero */
     border-radius: 12px;   /* soft modern corners */
     object-fit: cover;
@@ -330,12 +330,12 @@ body {
    MOBILE RESPONSIVE DESIGN (IMPROVED)
 ================================ */
 @media (max-width: 768px) {
-  .market-section {
+ /* .market-section {
     width: 100%;
     display: flex;
     justify-content: center;
     margin: 2rem 0;
-}
+}*/
 
    .market-photo {
       width: 350px;
