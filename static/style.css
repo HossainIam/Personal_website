@@ -325,67 +325,19 @@ body {
 }
 /* End of this certificate section */
 
-/* --- MOBILE RESPONSIVE DESIGN --- */
+/* ================================
+   MOBILE RESPONSIVE DESIGN
+   ================================ */
 @media (max-width: 768px) {
 
-    /* HERO SECTION (First page) */
-    .hero-wrapper {
-        flex-direction: column;    /* stack image and text */
-        text-align: center;        /* center text */
-        padding: 2rem 0;
-    }
-
-    .hero-text {
-        padding-right: 0;          /* remove desktop spacing */
-        margin-top: 1rem;
-    }
-
-    .profile-photo {
-        max-width: 80%;            /* prevent huge image */
-        width: 260px;
-        height: auto;
-    }
-
-    /* ABOUT SECTION */
-    .about-content {
-        flex-direction: column;    /* stack text above image */
-        text-align: center;
-    }
-
-    .about-text p {
-        margin-left: 0;            /* center the paragraph */
-        max-width: 100%;
-    }
-
-    .about-photo {
-        margin-right: 0;
-        width: 260px;
-    }
-
-    /* EDUCATION SECTION */
-    .hnu-content,
-    .nsu-content {
-        flex-direction: column;    /* stack */
-        text-align: center;
-    }
-
-    .hnu-description,
-    .nsu-description {
-        padding: 0 1rem;
-    }
-
-    /* CERTIFICATES */
-    .certificate-grid {
-        grid-template-columns: 1fr;   /* 1 column on small screens */
-    }
-
-    /* ---  NAVIGATION FIX --- */
-
+    /* --------------------------------
+       TOP NAVIGATION (HEADER)
+    -------------------------------- */
     .top-bar .container {
-        flex-direction: column;   /* stack title + links vertically */
-        align-items: flex-start;   /* left align */
+        flex-direction: column;
+        align-items: flex-start;
         padding: 1rem;
-        gap: 0.5rem;
+        gap: 0.4rem;
     }
 
     .brand h1 {
@@ -397,15 +349,102 @@ body {
     }
 
     .nav-links {
-        flex-wrap: wrap;            /* allow links to go to new line */
+        flex-wrap: wrap;
         gap: 0.8rem;
-        font-size: 0.9rem;
+        padding-bottom: 0.5rem;
     }
 
     .nav-links a {
-        font-size: 1rem;            /* larger tap-friendly text */
+        font-size: 1rem;
     }
 
+    /* --------------------------------
+       HERO SECTION
+    -------------------------------- */
+    .hero-wrapper {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 0;
+        gap: 1.5rem;
+    }
 
+    .hero-text {
+        padding-right: 0;
+        margin-top: 0.5rem;
+    }
+
+    .profile-photo {
+        width: 250px;
+        max-width: 80%;
+        height: auto;
+    }
+
+    /* --------------------------------
+       ABOUT SECTION
+    -------------------------------- */
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .about-text p {
+        margin-left: 0;
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+
+    .about-photo {
+        width: 260px;
+        margin-right: 0;
+    }
+
+    /* --------------------------------
+       EDUCATION SECTION (IMPORTANT FIX)
+    -------------------------------- */
+    .education-wrapper {
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0.5rem;
+        margin: 0 auto;
+    }
+
+    .hnu-content,
+    .nsu-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .hnu-description,
+    .nsu-description {
+        max-width: 90%;
+        margin: 0 auto;
+        line-height: 1.6;
+        font-size: 1rem;
+        padding: 0 0.5rem;
+    }
+
+    .hnu-photo,
+    .nsu-photo {
+        width: 100px;
+        margin: 0 auto;
+    }
+
+    /* --------------------------------
+       CERTIFICATES SECTION
+    -------------------------------- */
+    .certificate-grid {
+        grid-template-columns: 1fr; /* 1 column on mobile */
+        gap: 20px;
+    }
+
+    .cert-img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .certificate-content h1 {
+        font-size: 1.3rem;
+    }
 }
-
