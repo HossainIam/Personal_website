@@ -330,6 +330,20 @@ body {
    MOBILE RESPONSIVE DESIGN (IMPROVED)
 ================================ */
 @media (max-width: 768px) {
+  .market-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+   .market-photo {
+      width: 350px;
+      max-width: 100%;
+      height: auto;
+}
+
+
 
     /* --------------------------------
        GLOBAL — Center paragraphs on mobile
