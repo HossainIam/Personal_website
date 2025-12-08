@@ -21,23 +21,29 @@ console.log("JS loaded!"); // to check the jav script loading or not
 
 // Highlight based on scroll position
 
-const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll("nav a");
+const sections = document.querySelectorAll("section");          // Select all page sections
+const navLinks = document.querySelectorAll(".nav-links a");     // Select all navigation links
 
 window.addEventListener("scroll", () => {
-    let current = "";
+    let current = "";                                            // Track which section is active
+
+    const scrollPos = window.scrollY + 120;                      // Add offset for fixed header
 
     sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        if (scrollY >= sectionTop - 80) {
-            current = section.getAttribute("id");
+        const top = section.offsetTop;                           // Section's top position
+        const height = section.offsetHeight;                     // Section's height
+
+        if (scrollPos >= top && scrollPos < top + height) {      // Check if we are inside the section
+            current = section.getAttribute("id");                // Store active section ID
         }
     });
 
     navLinks.forEach(link => {
-        link.classList.remove("active");
-        if (link.getAttribute("href") === "#" + current) {
-            link.classList.add("active");
+        link.classList.remove("active");                         // Remove active class from all links
+
+        if (link.getAttribute("href") === `#${current}`) {       // Match link to current section
+            link.classList.add("active");                        // Add active class to highlight link
         }
     });
 });
+
