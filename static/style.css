@@ -90,6 +90,38 @@ body {
 }
 
 
+/*This section for the hover on the top */
+
+/* Default link style */
+.nav-links a {
+    color: white;                  /* normal */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect (desktop only) */
+.nav-links a:hover {
+    color:  #D4B05D;                /* pastel hover color #91e0ac*/
+}
+
+/* When JavaScript adds .active (scroll or click) */
+.nav-links a.active {
+    color: #D4B05D !important;     /* same pastel color */
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Website title */
