@@ -185,27 +185,22 @@ body {
     padding: 0 2rem;
     position= relative;
 }
-
+/* Container: left text + right image */
 .about-wrapper {
     height: 100%;
     width: 100%;
     display: flex;
-    flex-direction: column;  /* stack content + arrow vertically */
-    justify-content: center; /* center vertically */
+    justify-content: space-between; /* space between text & image */
+    align-items: center;            /* vertically centered */
+    gap: 3rem;
     position: relative;
 }
 
-.about-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 3rem;
-}
-/*Text side left*/
+/* Left-side text */
 .about-text h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    text-align: center;
+    text-align: center;   /* better than center for left side text */
     color: var(--text-main);
 }
 
@@ -214,15 +209,14 @@ body {
     line-height: 1.7;
     color: var(--text-sub);
     text-align: center;
-    max-width: 550px;  /* keeps text clean */
-    margin-left: 2rem;
+    max-width: 550px;
 }
-/*Image on right*/
+
+/* Right-side image */
 .market-photo {
-    width: 320px;          /* same visual importance as hero */
-    border-radius: 12px;   /* soft modern corners */
+    width: 320px;
+    border-radius: 12px;
     object-fit: cover;
-    margin-right: 3rem;
 }
 
 .about-card {
