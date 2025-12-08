@@ -399,7 +399,7 @@ body {
     /* --------------------------------
        ABOUT SECTION
     -------------------------------- */
-    .about-content {
+    .about-wrapper {
         flex-direction: column;
         text-align: center;
     }
